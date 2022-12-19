@@ -19,5 +19,8 @@ app.get("/chat",(req,res)=>{
 const io = require("socket.io")(server)
 
 io.on('connection',(socket)=>{
-    console.log("---ClientConnected----",socket.id)
+    console.log("---ClientConnected----",socket.id);
+    socket.on("message",(msg)=>{
+        socket.broadcast.emit("message",msg)
+    })
 })
