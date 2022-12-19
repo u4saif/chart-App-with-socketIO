@@ -8,6 +8,7 @@ server.listen(PORT,()=>{
     console.log(`Server is Listing at PORT: ${PORT}`);
 }) 
 
+app.use(express.static(__dirname+'/public'))
 app.get("/chat",(req,res)=>{
     console.log(req.url);
     res.sendFile(__dirname+'/index.html');

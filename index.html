@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap'); </style>
+    <link rel="stylesheet" href="./style.css">
     <title>chatApp</title>
 </head>
 <body>
@@ -20,39 +21,5 @@
         <button id="sendBtn" onclick="sendMsg()">Send</button>
     </div>
 </body>
-<script>
-function sendMsg(){
-        console.warn("---msg Send");
-    }
-</script>
-<style>
-*{  
-    font-family: 'Unbounded', cursive;
-    color: rgb(20, 20, 20);
-}
-header{
-    text-align: center;
-}
-.chatTextArea ,
-.editContainer{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-#chatText{
-    width: 80%;
-}
-
-#sendText{
-    min-width: 41em;
-    padding: 5px;
-    margin-right: 1em;
-}
-
-#sendBtn{
-    width: 10em;
-    padding: 5px;
-    background-color: chartreuse;
-}
-</style>
+<script src="./clientApp.js"></script>
 </html>

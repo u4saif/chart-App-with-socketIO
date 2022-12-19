@@ -1,0 +1,28 @@
+*{  
+    font-family: 'Unbounded', cursive;
+    color: rgb(20, 20, 20);
+}
+header{
+    text-align: center;
+}
+.chatTextArea ,
+.editContainer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+#chatText{
+    width: 80%;
+}
+
+#sendText{
+    min-width: 41em;
+    padding: 5px;
+    margin-right: 1em;
+}
+
+#sendBtn{
+    width: 10em;
+    padding: 5px;
+    background-color: chartreuse;
+}
