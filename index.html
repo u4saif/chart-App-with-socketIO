@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap'); </style>
+    <title>chatApp</title>
+</head>
+<body>
+    <header>Welcome to WeChat</header>
+    <div class="chatTextArea">
+        <textarea name="chatText" id="chatText"  rows="10"></textarea>
+    </div>
+    <div class="editContainer">
+        <input id="sendText" type="text" placeholder="Type here...">
+        <button id="sendBtn" onclick="sendMsg()">Send</button>
+    </div>
+</body>
+<script>
+function sendMsg(){
+        console.warn("---msg Send");
+    }
+</script>
+<style>
+*{  
+    font-family: 'Unbounded', cursive;
+    color: rgb(20, 20, 20);
+}
+header{
+    text-align: center;
+}
+.chatTextArea ,
+.editContainer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+#chatText{
+    width: 80%;
+}
+
+#sendText{
+    min-width: 41em;
+    padding: 5px;
+    margin-right: 1em;
+}
+
+#sendBtn{
+    width: 10em;
+    padding: 5px;
+    background-color: chartreuse;
+}
+</style>
+</html>
