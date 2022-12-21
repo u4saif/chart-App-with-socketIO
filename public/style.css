@@ -73,3 +73,20 @@ textarea {
     color: #333;
     font-size: 14px;
 }
+
+.userAdded{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.userAdded h2{
+    color: rgb(28, 28, 28);
+    background-color:rgb(247, 247, 213);
+    border: 1px dashed rgb(255, 255, 66);;
+}
+textarea {
+    resize: none;
+}
